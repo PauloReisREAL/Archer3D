@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 3750
   selfDestroy: 5
-  damage: 5
+  damage: 1
 --- !u!54 &6247614694496111542
 Rigidbody:
   m_ObjectHideFlags: 0

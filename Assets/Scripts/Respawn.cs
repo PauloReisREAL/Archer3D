@@ -16,14 +16,15 @@ public class Respawn : MonoBehaviour
         currentArrow = Instantiate(respawner, respawnReference.position, respawnReference.rotation, respawnReference).GetComponent<Arrow>();
     }
 
-    void Update()
+    public void Shot()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canShot)
+        if (canShot)
         {
             currentArrow.OnShot();
-            StartCoroutine(Cooldown(respawnCoolDown));
+            StartCoroutine(Cooldown(respawnCoolDown)); 
         }
     }
+
     IEnumerator Cooldown(float cooldown)
     {
         canShot = false;

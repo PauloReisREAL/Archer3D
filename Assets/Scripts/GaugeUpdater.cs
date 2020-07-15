@@ -1,18 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GaugeUpdater : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Image fillableImage;
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateGauge (float currentValue, float maxValue)
     {
-        
+        fillableImage.fillAmount = currentValue / maxValue;
     }
 }

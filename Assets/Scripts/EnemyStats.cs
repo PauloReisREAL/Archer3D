@@ -6,18 +6,27 @@ public class EnemyStats : MonoBehaviour
 {
     public int health;
     private int maxHP;
+    private EnemyManager enemyManager;
+    public GaugeUpdater healthGauge;
 
-    // Start is called before the first frame update
+    private void Start()
+    {
+        maxHP = health;
+        enemyManager = GameObject.FindObjectOfType<EnemyManager>();
+
+    }
     public void Hit (int damage)
     {
         health -= damage;
         Debug.Log("Enemy Health: " + health.ToString());
+        healthGauge.UpdateGauge(health, maxHP);
     }
 
     void Update()
     {
         if(health <= 0)
         {
+            enemyManager.RegisterEnemiesKilled();
             Destroy(gameObject);
         }
     }

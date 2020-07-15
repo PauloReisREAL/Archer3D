@@ -4,12 +4,16 @@ using UnityEngine.Events;
 
 public class TowerStats : MonoBehaviour
 {
+    public int maxHP;
     public int health;
     public bool isHit;
     public UnityEvent onGameOver;
-    private int maxHP;
+    public GaugeUpdater healthGauge;
 
-
+    private void Start()
+    {
+        maxHP = health;
+    }
     void Update()
     {
         if (health <= 0)
@@ -24,5 +28,6 @@ public class TowerStats : MonoBehaviour
         isHit = true;
         health -= damage;
         isHit = false;
+        healthGauge.UpdateGauge(health, maxHP);
     }
 }

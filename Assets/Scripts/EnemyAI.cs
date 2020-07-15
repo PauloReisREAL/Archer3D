@@ -12,6 +12,10 @@ public class EnemyAI : MonoBehaviour
     public Transform towerPos;
     public float speed = 5;
 
+    public void Awake()
+    {
+        towerPos = GameObject.FindWithTag("Tower").transform;
+    }
     private void OnTriggerStay(Collider col)
     {
         if(col.gameObject.tag == playerTag)
