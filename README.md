@@ -2,21 +2,21 @@
 ##Descrição
 Você é o atirador escolhido que protegerá o reino de todo o mau! Melhore seu arco, escolha a flecha certa e mire com cuidado em seus inimigos para garantir a proteção do reino.
 
-##Referência
+## Referência
 - [Snipers vsThieves] https://www.youtube.com/watch?v=ajdmmVEqCHs
 - [Sniper 3D] https://www.youtube.com/watch?v=azWO3R89rVc
 
-##Diferencial
+## Diferencial
 - Sniper 3D de flechas e arcos;
 - Existem diversos tipos de arcos e flechas, aonde o jogador deverá usar a cabeça para conseguir passar cada fase;
 - Utilizar a temática Medieval para um jogo de tiro;
 
-##Controles
+## Controles
 - Toque no botão de atacar para disparar as flechas;
 - Deslize para movimentar a câmera;
 - Toque nos itens do iventário para poder utilizar outras habilidades;
 
-##Regras
+## Regras
 1. O jogador poderá tocar em qualquer parte do hemisfério esquerdo da tela para posicionar a câmera;
 2. O jogador poderá tocar no botão de atirar para disparar a flecha;
 3. As flechas fazem parábola;
@@ -26,6 +26,6 @@ Você é o atirador escolhido que protegerá o reino de todo o mau! Melhore seu 
 7. Os inimigos poderão se mover pelo mapa;
 8. O jogador deverá impedir que os inimigos cheguem no castelo, o qual ele protege, caso os inimigos cheguem, o jogador perde;
 
-##Anexos
+## Anexos
 - [ADOBE XD - Archer3D] https://xd.adobe.com/view/c8b00831-c998-47dc-826f-9be0e3090c7a-9de3/
 - [GOOGLE DRIVEL -Archer 3D] https://drive.google.com/drive/folders/1PymUDm-onNpCtbVQ9pVdJFEqytPp-dH3?usp=sharing
