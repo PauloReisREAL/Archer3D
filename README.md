@@ -3,7 +3,7 @@
 Você é o atirador escolhido que protegerá o reino de todo o mau! Melhore seu arco, escolha a flecha certa e mire com cuidado em seus inimigos para garantir a proteção do reino.
 
 ## Referência
-- [Snipers vsThieves] https://www.youtube.com/watch?v=ajdmmVEqCHs
+- [Snipers vs Thieves] https://www.youtube.com/watch?v=ajdmmVEqCHs
 - [Sniper 3D] https://www.youtube.com/watch?v=azWO3R89rVc
 
 ## Diferencial
