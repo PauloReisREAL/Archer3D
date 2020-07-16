@@ -163,7 +163,8 @@ MonoBehaviour:
   attackCooldown: 1
   enemyStats: {fileID: 7890678912074383586}
   towerPos: {fileID: 0}
-  speed: 5
+  speed: 3
+  isFrozen: 0
 --- !u!1 &7890678912074383587
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0574a68cf66f75a4cbde39aee4be0e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 2
   healthGauge: {fileID: 715730539730661379}
 --- !u!1001 &8155692386431319291
 PrefabInstance:

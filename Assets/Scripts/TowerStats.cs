@@ -30,4 +30,16 @@ public class TowerStats : MonoBehaviour
         isHit = false;
         healthGauge.UpdateGauge(health, maxHP);
     }
+    public void Heal(int healAmount)
+    {
+        if(health < maxHP)
+        {
+            health += healAmount;
+            
+            if(health > maxHP)
+            {
+                health = maxHP;
+            }
+        }
+    }
 }

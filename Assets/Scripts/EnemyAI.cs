@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,11 +12,21 @@ public class EnemyAI : MonoBehaviour
     public EnemyStats enemyStats;
     public Transform towerPos;
     public float speed = 5;
+    public bool isFrozen = false;
 
     public void Awake()
     {
         towerPos = GameObject.FindWithTag("Tower").transform;
     }
+
+    internal void Freeze(float freezeAmount)
+    {
+        isFrozen = true;
+        StartCoroutine(Unfreenze(freezeAmount));
+        Debug.Log("congelou2");
+
+    }
+
     private void OnTriggerStay(Collider col)
     {
         if(col.gameObject.tag == playerTag)
@@ -32,7 +43,14 @@ public class EnemyAI : MonoBehaviour
     }
     private void Update()
     {
-        transform.parent.position = Vector3.MoveTowards(transform.parent.position, towerPos.position, Time.deltaTime*speed);
+        if (!isFrozen)
+        {
+            transform.parent.position = Vector3.MoveTowards(transform.parent.position, towerPos.position, Time.deltaTime * speed);
+        }
     }
-
+    private IEnumerator Unfreenze(float freezeAmount)
+    {
+        yield return new WaitForSeconds(freezeAmount);
+        isFrozen = false;
+    }
 }

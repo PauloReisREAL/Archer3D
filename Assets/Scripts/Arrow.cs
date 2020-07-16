@@ -14,7 +14,7 @@ public class Arrow : MonoBehaviour
         rigidB = GetComponent<Rigidbody>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         Debug.Log("acertou um alvo");
         if (other.gameObject.tag == "Enemy")

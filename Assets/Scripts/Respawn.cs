@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    public bool placeArrow = true;
     public GameObject respawner;
     public float respawnCoolDown = 2;
     public Transform respawnReference;
@@ -13,13 +14,19 @@ public class Respawn : MonoBehaviour
 
     private void Start()
     {
-        currentArrow = Instantiate(respawner, respawnReference.position, respawnReference.rotation, respawnReference).GetComponent<Arrow>();
+        if (placeArrow)
+        {
+            currentArrow = Instantiate(respawner, respawnReference.position, respawnReference.rotation, respawnReference).GetComponent<Arrow>();
+        }
     }
 
     public void Shot()
     {
         if (canShot)
         {
+            if (currentArrow == null) {
+                currentArrow = Instantiate(respawner, respawnReference.position, respawnReference.rotation, respawnReference).GetComponent<Arrow>();
+            }
             currentArrow.OnShot();
             StartCoroutine(Cooldown(respawnCoolDown)); 
         }
