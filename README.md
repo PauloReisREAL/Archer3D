@@ -7,9 +7,9 @@ Você é o atirador escolhido que protegerá o reino de todo o mau! Melhore seu 
 - [Sniper 3D] https://www.youtube.com/watch?v=azWO3R89rVc
 
 ## Diferencial
-- Sniper 3D de flechas e arcos;
+- Sniper 3D de ARCO e FLECHA;
 - Existem diversos tipos de arcos e flechas, aonde o jogador deverá usar a cabeça para conseguir passar cada fase;
-- Utilizar a temática Medieval para um jogo de tiro;
+- Diversos minigames para o jogador se entreter, utilizando a temática medieval;
 
 ## Controles
 - Toque no botão de atacar para disparar as flechas;
