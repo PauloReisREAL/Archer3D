@@ -14,7 +14,7 @@ Você é o atirador escolhido que protegerá o reino de todo o mau! Melhore seu 
 ## Controles
 - Toque no botão de atacar para disparar as flechas;
 - Deslize para movimentar a câmera;
-- Toque nos itens do iventário para poder utilizar outras habilidades;
+- Toque nos itens do inventário para poder utilizar outras habilidades;
 
 ## Regras
 1. O jogador poderá tocar em qualquer parte do hemisfério esquerdo da tela para posicionar a câmera;
